@@ -83,7 +83,7 @@ axios.get("https://3000.gov.tw/hpgapi-openmap/api/getPostData")
             data.forEach(item => {
                 if (item.hsnNm == countries.value && item.townNm == cyties.value) {
                     content = `<li> <div class="card p-2 mb-2">
-                <h4 class="m-0 mb-2 bold">${item.storeNm}</h4>
+                <h4 class="btn btn-primary m-0 mb-2 bold">${item.storeNm}</h4>
                 <p class="m-0 mb-2 h5 text-danger"><span class="bold">三倍券庫存量：</span>${item.total}</p>
                 <a target="_blank" href="https://www.google.com.tw/maps/place/${item.addr}" class="m-0 mb-2 h6 text-dark underLine"><span class="bold">地址：</span>${item.addr}</a>
                 <p class="m-0 mb-2 h6"><span class="bold">電話：</span>${item.tel}</p>
@@ -100,7 +100,7 @@ axios.get("https://3000.gov.tw/hpgapi-openmap/api/getPostData")
             data.forEach(item => {
                 if (item.hsnNm == countries.value && item.townNm == cyties.value) {
                     content = `<li> <div class="card p-1 mb-2">
-                <h4 class="m-0 mb-2 bold">${item.storeNm}</h4>
+                <h4 class="btn btn-primary m-0 mb-2 bold">${item.storeNm}</h4>
                 <p class="m-0 mb-2 h5 text-danger"><span class="bold">三倍券庫存量：</span>${item.total}</p>
                 <a target="_blank" href="https://www.google.com.tw/maps/place/${item.addr}" class="m-0 mb-2 h6 text-dark underLine"><span class="bold">地址：</span>${item.addr}</a>
                 <p class="m-0 mb-2 h6"><span class="bold">電話：</span>${item.tel}</p>

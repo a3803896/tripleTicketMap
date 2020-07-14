@@ -7,6 +7,14 @@
     }
 }
 
+h1 {
+    font-size: 24px !important;
+
+    @include lg-width {
+        font-size: 37px !important;
+    }
+}
+
 .leaflet-control-zoom {
     display: none;
 }
@@ -52,17 +60,25 @@
 
 .card {
     background: rgb(232, 247, 255);
+}
 
-    h4 {
-        cursor: pointer;
-        text-decoration: underline;
-    }
+.btn {
+    font-size: 24px;
+    padding: 0;
+    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.8);
+    transition: all ease-in-out 300ms;
 
-    h4:hover {
-        color: rgb(44, 96, 240);
+    &:hover {
+        box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.4);
+        transform: translate(0, -3px)
     }
 }
 
 .underLine {
     text-decoration: underline;
+}
+
+.noto {
+    font-family: 'Noto Sans TC',
+        sans-serif;
 }
