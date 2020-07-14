@@ -10020,4 +10020,71 @@ sup {
   height: 100vh;
 }
 
+@media (min-width: 992px) {
+  #map {
+    height: calc(100vh - 16px);
+  }
+}
+
+.leaflet-control-zoom {
+  display: none;
+}
+
+.icon {
+  position: absolute;
+  z-index: 2000;
+  background: white;
+  color: #336bd3;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+}
+
+.gpsIcon {
+  bottom: 10px;
+  left: 10px;
+}
+
+.menuIcon {
+  top: 10px;
+  left: 10px;
+}
+
+.navBar {
+  position: absolute;
+  z-index: 2001;
+  left: -100vw;
+  transition: 0.5s;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+@media (min-width: 992px) {
+  .navBar {
+    position: unset;
+  }
+}
+
+.show {
+  left: 0;
+  right: 0;
+  transition: 0.5s;
+}
+
+.card {
+  background: #e8f7ff;
+}
+
+.card h4 {
+  cursor: pointer;
+}
+
+.card h4:hover {
+  text-decoration: underline;
+  color: #2c60f0;
+}
+
+.underLine {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=all.css.map */

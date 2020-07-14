@@ -19,16 +19,31 @@
 
 
 
-  <div class="container p-0-onlyphone">
+  <div class="container">
     <div class="row ">
-        <div class="col-3">
-            <div id="app" class="d-flex">
-                <select name="countries" id="countries"></select>
-                <select name="cyties" id="cyties"></select>
+        <div class="col-12 col-lg-4">
+            <div class="navBar p-3 w-100 bg-white">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex mb-3">
+                        <select name="countries" id="countries" class="p-1 mr-2"></select>
+                        <select name="cyties" id="cyties" class="p-1"></select>
+                    </div>
+                    <span class="material-icons h2 mb-0 d-lg-none" id="clearIcon">
+                        clear
+                    </span>
+                </div>
+                <ul id="list" class="mb-0 list-unstyled"></ul>
             </div>
         </div>
-        <div class="col-12 col-lg-9">
-            <div id="map"></div>
+        <div class="col-12 col-lg-8 p-0-onlyphone pt-lg-3">
+            <div id="map">
+                <span class="material-icons icon gpsIcon h2 mb-0" id="gpsIcon">
+                    gps_fixed
+                </span>
+                <span class="material-icons icon menuIcon h2 mb-0 d-lg-none" id="menuIcon">
+                    menu
+                </span>
+            </div>
         </div>
     </div>
 
