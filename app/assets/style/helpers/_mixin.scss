@@ -1,0 +1,119 @@
+$verylargephone:1200px;
+$largephone:992px;
+$mediumphone:768px;
+$smallphone:576px;
+
+/*把變數帶入mixin中，此mixin只就單純把media queries寫到我的mixin中，
+並且使用我上面設立的變數來調動media queries的width*/
+
+//電腦
+@mixin xl-width() {
+    @media (min-width:$verylargephone) {
+        @content;
+    }
+}
+
+//大手機、平板
+@mixin lg-width() {
+    @media(min-width:$largephone) {
+        @content;
+    }
+}
+
+//手機
+@mixin md-width() {
+    @media (min-width: $mediumphone) {
+        @content;
+    }
+}
+
+//小手機
+@mixin sm-width() {
+    @media (min-width: $smallphone) {
+        @content;
+    }
+}
+
+//實際引用
+
+// .div1 {
+
+//     電腦版
+//     @include pc-width {
+//         padding: 20px;
+//     }
+
+//     平板
+//     @include pad-width {
+//         padding: 10px;
+//     }
+
+//     小平板
+//     @include small-pad-width {
+//         padding: 5px;
+//     }
+
+//     手機
+//     @include phone-width {
+//         padding: 0px;
+//     }
+// }
+
+@mixin hidetext {
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@mixin flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin size($w, $h) {
+    width: $w+px;
+    height: $h+px;
+}
+
+@mixin fontsize($fz, $lh) {
+    font-size: $fz+px;
+    line-height: $lh+px;
+}
+
+@mixin poa ($top, $left) {
+    position: absolute;
+    top: $top+px;
+    left: $left+px;
+}
+
+@mixin center($position) {
+    position: absolute;
+
+    @if $position=='vertical' {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @else if $position=='horizontal' {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    @else if $position=='both' {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@mixin circle($w, $h) {
+    width: $w+px;
+    height: $h+px;
+    border-radius: 50%;
+}
+
+@mixin container($w) {
+    max-width: $w+px;
+    margin: 0 auto;
+}
