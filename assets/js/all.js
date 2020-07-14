@@ -119,6 +119,7 @@ axios.get('https://raw.githubusercontent.com/Feitoengineer19/mask-map/master/Cit
   countries.innerHTML = "<select name=\"\" id=\"countries\">".concat(countriesOptions, "</select>");
   countries.addEventListener('change', function () {
     cytiesOptions = '';
+    cytiesOptions = "<option value=\"\" selected disabled>\u8ACB\u9078\u64C7</option>";
     geoData[countries.selectedIndex - 1].AreaList.forEach(function (item) {
       // console.log(item.AreaName);
       cytiesOptions += "<option value=\"".concat(item.AreaName, "\">").concat(item.AreaName, "</option>");
