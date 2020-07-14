@@ -10076,10 +10076,10 @@ sup {
 
 .card h4 {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .card h4:hover {
-  text-decoration: underline;
   color: #2c60f0;
 }
 
