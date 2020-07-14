@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="三倍券地圖" content="振興三倍券 三倍券地圖">
   <title>三倍券地圖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin="" />
@@ -19,13 +21,14 @@
 
 
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row ">
         <div class="col-12 col-lg-4">
             <div class="navBar p-3 w-100 bg-white">
-                <div class="d-flex justify-content-between">
-                    <div class="d-flex mb-3">
-                        <select name="countries" id="countries" class="p-1 mr-2"></select>
+                <h1 class="mr-3 mb-2 bold text-info noto">三 倍 券 地 圖</h1>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div class="d-flex">
+                        <select name="countries" id="countries" class="p-1 mr-2 mr-lg-4"></select>
                         <select name="cyties" id="cyties" class="p-1"></select>
                     </div>
                     <span class="material-icons h2 mb-0 d-lg-none" id="clearIcon">

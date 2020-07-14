@@ -10026,6 +10026,16 @@ sup {
   }
 }
 
+h1 {
+  font-size: 24px !important;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 37px !important;
+  }
+}
+
 .leaflet-control-zoom {
   display: none;
 }
@@ -10074,17 +10084,24 @@ sup {
   background: #e8f7ff;
 }
 
-.card h4 {
-  cursor: pointer;
-  text-decoration: underline;
+.btn {
+  font-size: 24px;
+  padding: 0;
+  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.8);
+  transition: all ease-in-out 300ms;
 }
 
-.card h4:hover {
-  color: #2c60f0;
+.btn:hover {
+  box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.4);
+  transform: translate(0, -3px);
 }
 
 .underLine {
   text-decoration: underline;
+}
+
+.noto {
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 /*# sourceMappingURL=all.css.map */
