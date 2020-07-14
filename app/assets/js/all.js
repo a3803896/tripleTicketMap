@@ -145,6 +145,7 @@ axios.get('https://raw.githubusercontent.com/Feitoengineer19/mask-map/master/Cit
 
         countries.addEventListener('change', function () {
             cytiesOptions = '';
+            cytiesOptions = `<option value="" selected disabled>請選擇</option>`;
             geoData[countries.selectedIndex - 1].AreaList.forEach(item => {
                 // console.log(item.AreaName);
                 cytiesOptions += `<option value="${item.AreaName}">${item.AreaName}</option>`;
