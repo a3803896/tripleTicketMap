@@ -10040,8 +10040,8 @@ sup {
 }
 
 .gpsIcon {
-  bottom: 10px;
-  left: 10px;
+  top: 10px;
+  right: 10px;
 }
 
 .menuIcon {
