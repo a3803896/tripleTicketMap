@@ -96,7 +96,7 @@ axios.get("https://3000.gov.tw/hpgapi-openmap/api/getPostData").then(function (r
       // console.log(e.target.innerText);
       data.forEach(function (item) {
         if (item.storeNm == e.target.innerText) {
-          map.setView([item.latitude, item.longitude], 16);
+          map.setView([item.latitude, item.longitude], 18);
         }
       });
       $('.navBar').toggleClass('show');
