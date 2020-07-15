@@ -40,7 +40,7 @@ axios.get("https://3000.gov.tw/hpgapi-openmap/api/getPostData").then(function (r
   data.forEach(function (item) {
     //判斷標點顏色
     var iconColor = function () {
-      if (item.total !== 0) {
+      if (item.total != 0) {
         return new L.Icon({
           iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
           shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
